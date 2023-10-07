@@ -117,15 +117,23 @@
 
   @keyframes wipe-enter {
 	0% {
-		transform: scale(0, .025);
+		transform: translateX(0px);
 	}
-	50% {
-		transform: scale(1, .025);
+	100% {
+		transform: translateX(100px);
 	}
+}
+.invisible{
+    color: transparent;
+}
+
+#color_aftermov{
+    color: white;
 }
 
 @media (prefers-reduced-motion: no-preference) {
     .standard_movement {
+        color: white;
         animation: wipe-enter 1s 1;
     }
   }
