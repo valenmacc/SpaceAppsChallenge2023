@@ -11,11 +11,25 @@ body{
     font-size: larger;
 }
 
-.Notselected{
+.selected_index{
+    color: #fede59;
+    font-weight: bold;
+    font-family: 'Lucida Sans Regular';
+    font-size: xx-large;
+}
+
+.notselected{
     color: #fede59;
     font-weight: bold;
     font-family: 'Lucida Sans Regular';
     font-size: larger;
+}
+
+.notselected_index{
+    color: #fede59;
+    font-weight: bold;
+    font-family: 'Lucida Sans Regular';
+    font-size: xx-large;
 }
 
 .standard{
@@ -38,6 +52,11 @@ body{
 
 .logo{
     width: 10%;
+    animation: movedown 1s linear 1;
+}
+
+.logo_index{
+    width: 40%;
     animation: movedown 1s linear 1;
 }
 
