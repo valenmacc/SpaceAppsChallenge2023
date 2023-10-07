@@ -57,21 +57,21 @@
                 </div>
 
                 <h3 class="card-title standard text-center p-4" id="white_title">BUT... DOES THAT REALLY AFFECT US?</h3>
-                <div class="row p-5 invisible" id="animationID1"><!--BLOQUE DE TEXTO-->
+                <div class="row p-5 invisible" id="animationID4"><!--BLOQUE DE TEXTO-->
                     <div class="col-md-8">
                         <div class="card-body align-middle">
                             <p class="card-text standard">This has a potentially significant impact on climate change, especially as we look to the future with more lands becoming dust-producing regions due to desertification. We aim to understand how these changes will influence our future climate.</p>
                         </div>
                     </div>
                     <div class="col-md-4 text-center">
-                        <img class="img-fluid w-50" src="images/foto_4.png">
+                        <img class="img-fluid w-90" src="images/foto_4.png" alt="">
                     </div>                    
                 </div>
 
                 <h3 class="card-title standard text-center p-4" id="white_title">WHAT DID SCIENTISTS DO?</h3>
                 <p class="card-text standard p-5">Initially, they launched a resupply service vehicle bound for the International Space Station (ISS). Once aboard the ISS, they affixed it to its exterior. EMIT, an imaging spectrometer, had a telescope designed to capture vast amounts of light. This light was then focused onto the slit of the spectrometer.</p>
-                <video controls autoplay src="images/video_1.mp4"></video>
 
+                <p align="center"><iframe src="https://drive.google.com/file/d/1n6jZcg7633-fNXMjs2jGccSEZuF17jrZ/preview" width="640" height="480" allow="autoplay"></iframe></p>
             </div>
         </div>
 
@@ -84,6 +84,7 @@
         var element1 = document.getElementById("animationID1");
         var element2 = document.getElementById("animationID2");
         var element3 = document.getElementById("animationID3");
+        var element4 = document.getElementById("animationID4");
         document.body.onscroll = function() {
         if (document.getElementById("animationID1").getBoundingClientRect().top + 400 <= window.innerHeight) {
             //document.body.onscroll = "";
@@ -97,11 +98,17 @@
             element2.classList.add("opacity_animation");
             element2.classList.add("standard_movement_right");
             }
-        if (document.getElementById("animationID3").getBoundingClientRect().top + 200 <= window.innerHeight) {
+        if (document.getElementById("animationID3").getBoundingClientRect().top + 400 <= window.innerHeight) {
             //document.body.onscroll = "";
             element3.classList.remove("invisible"); 
             element3.classList.add("opacity_animation");
             element3.classList.add("standard_movement_left");
+            }
+        if (document.getElementById("animationID4").getBoundingClientRect().top + 200 <= window.innerHeight) {
+            //document.body.onscroll = "";
+            element4.classList.remove("invisible"); 
+            element4.classList.add("opacity_animation");
+            element4.classList.add("standard_movement_right");
             }
         }
     </script>
