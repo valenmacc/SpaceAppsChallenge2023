@@ -44,6 +44,7 @@
 .standard{
     color: white;
     font-family: 'Lucida Sans Regular';
+    font-size: larger;
 }
 
 .bgd{
@@ -118,6 +119,7 @@
 
 #white_title{
     color: white;
+    font-size: xx-large;
 }
 
   @keyframes wipe-enter {
@@ -168,3 +170,7 @@
        animation: wipe-enter-reverse 1s 1;
    }
  }
+
+.right{
+    text-align: right;
+}
