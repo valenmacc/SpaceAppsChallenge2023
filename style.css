@@ -1,0 +1,12 @@
+body{
+    background-color: #00005b;
+    font-family: 'Lucida Sans'; 
+}
+
+.selected{
+    color: #FFFF00;
+}
+
+.Notselected{
+    color: #0000ff;
+}
