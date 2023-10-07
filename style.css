@@ -117,10 +117,19 @@
 
   @keyframes wipe-enter {
 	0% {
-		transform: translateX(100px);
+		transform: translateX(100vw);
 	}
 	100% {
-		transform: translateX(0px);
+		transform: translateX(0vw);
+	}
+}
+
+@keyframes wipe-enter-reverse {
+	0% {
+		transform: translateX(-100vw);
+	}
+	100% {
+		transform: translateX(0vw);
 	}
 }
 
@@ -142,8 +151,15 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .standard_movement {
+    .standard_movement_left {
         color: white;
         animation: wipe-enter 1s 1;
     }
   }
+
+@media (prefers-reduced-motion: no-preference) {
+   .standard_movement_right {
+       color: white;
+       animation: wipe-enter-reverse 1s 1;
+   }
+ }
