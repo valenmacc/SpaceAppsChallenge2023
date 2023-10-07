@@ -118,6 +118,6 @@
 
 @media (prefers-reduced-motion: no-preference) {
     .standard_movement {
-        animation: moveright 0.5s linear 1;
+        animation: wipe-enter 1s 1;
     }
   }
