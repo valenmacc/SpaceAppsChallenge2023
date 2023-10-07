@@ -26,7 +26,7 @@
 
             <div class="container">
                 <div class="card" id="blue_bgd">
-                    <div class="row p-5">
+                    <div class="row p-5 invisible" id="animationID1"><!--BLOQUE DE TEXTO-->
                         <div class="col-md-4">
                             <img class="img-fluid rounded-start" src="images/Logo sin fondo.png" alt="">
                         </div>
@@ -37,7 +37,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row p-5">
+                    <div class="row p-5 invisible" id="animationID2"><!--BLOQUE DE TEXTO-->
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h3 class="card-title standard" id="white_title">Surface Mineralogy (L2B)</h3>
@@ -48,7 +48,7 @@
                             <img class="img-fluid rounded-start" src="images/Logo sin fondo.png" alt="">
                         </div>
                     </div>
-                    <div class="row p-5">
+                    <div class="row p-5 invisible" id="animationID3"><!--BLOQUE DE TEXTO-->
                         <div class="col-md-4">
                             <img class="img-fluid rounded-start" src="images/Logo sin fondo.png" alt="">
                         </div>
@@ -66,10 +66,34 @@
 
 
         </div>
-    <script>
-        function goto (str){
-            window.location.href = str + ".html";
-        }
-    </script>
+        <script>
+            function goto (str){
+                window.location.href = str + ".html";
+            }
+            
+            var element1 = document.getElementById("animationID1");
+            var element2 = document.getElementById("animationID2");
+            var element3 = document.getElementById("animationID3");
+            document.body.onscroll = function() {
+            if (document.getElementById("animationID1").getBoundingClientRect().top + 400 <= window.innerHeight) {
+                //document.body.onscroll = "";
+                element1.classList.remove("invisible");
+                element1.classList.add("opacity_animation");
+                element1.classList.add("standard_movement_left");
+            }
+            if (document.getElementById("animationID2").getBoundingClientRect().top + 400 <= window.innerHeight) {
+                //document.body.onscroll = "";
+                element2.classList.remove("invisible");
+                element2.classList.add("opacity_animation");
+                element2.classList.add("standard_movement_right");
+                }
+            if (document.getElementById("animationID3").getBoundingClientRect().top + 200 <= window.innerHeight) {
+                //document.body.onscroll = "";
+                element3.classList.remove("invisible"); 
+                element3.classList.add("opacity_animation");
+                element3.classList.add("standard_movement_left");
+                }
+            }
+        </script>
 </body>
 </html>
