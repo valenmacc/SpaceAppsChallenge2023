@@ -38,9 +38,34 @@ body{
 
 .logo{
     width: 10%;
+    animation: movedown 1s linear 1;
+}
+
+@keyframes movedown{
+    0%{
+        transform: translateY(-100px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
 }
 
 .border{
     border-color: #fede59;
     border-width: 5px;
+}
+
+.nav_anime{
+    animation: moveright 0.5s linear 1;
+}
+
+@keyframes moveright{
+    0%{
+        transform: translateX(100px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
 }
