@@ -3,6 +3,11 @@
     background-size: cover;
 }
 
+.body_history{
+    background-image: url(images/stars.png);
+    background-size: cover;
+}
+
 .about{
     background-color: #000038;
     background-size: cover;
