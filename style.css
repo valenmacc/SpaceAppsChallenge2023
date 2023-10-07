@@ -1,6 +1,7 @@
 body{
-    background-color: #00005b;
     font-family: 'Lucida Sans Regular';
+    background-image: url(images/fondo_index.jpg);
+    background-size: cover;
 }
 
 .selected{
@@ -11,7 +12,7 @@ body{
 }
 
 .Notselected{
-    color: #004aad;
+    color: #fede59;
     font-weight: bold;
     font-family: 'Lucida Sans Regular';
     font-size: larger;
@@ -23,7 +24,7 @@ body{
 }
 
 .bgd{
-    background-color: #ebebfd;
+    background-color: #000038;
     position:fixed;
     padding:0;
     margin:0;
@@ -37,4 +38,9 @@ body{
 
 .logo{
     width: 10%;
+}
+
+.border{
+    border-color: #fede59;
+    border-width: 5px;
 }
