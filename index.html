@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Another One Bites the DUST!</title>
+</head>
+
+<style>
+    /* body{
+        background-image: url(images/ImagenHome.png);
+        background-size: cover;
+    } */
+</style>
+
+<body background="images/ImagenHome.png">
+    <home class="selected">HOME</home>
+    <about  onclick="goto('ABOUT')" class="Notselected">ABOUT</about>
+    <history onclick="goto('HISTORY')" class="Notselected">HISTORY</history>
+    <data onclick="goto('DATA')" class="Notselected">DATA PROCESSING</data>>
+    <missions onclick="goto('MISSIONS')" class="Notselected">MISSIONS</missions>>
+    <guide onclick="goto('GUIDE')" class="Notselected">GUIDE</guide>>
+    <div style="margin-top: 30%;">
+        <tracker onclick="goto('TRACKER')" class="boxed">TRACK LIVE THE ISS</tracker>
+    </div>
+
+    <script>
+        function goto (str){
+            window.location.href = str + ".html";
+        }
+    </script>
+</body>
+</html>
