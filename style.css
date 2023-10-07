@@ -1,5 +1,4 @@
-body{
-    font-family: 'Lucida Sans Regular';
+.body_index{
     background-image: url(images/fondo_index.jpg);
     background-size: cover;
 }
