@@ -3,6 +3,11 @@
     background-size: cover;
 }
 
+.about{
+    background-color: #020042;
+    background-size: cover;
+}
+
 .selected{
     color: #fede59;
     font-weight: bold;
