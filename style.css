@@ -4,13 +4,17 @@ body{
 }
 
 .selected{
-    color: #FFFF00;
+    color: #fede59;
+    font-weight: bold;
     font-family: 'Lucida Sans Regular';
+    font-size: larger;
 }
 
 .Notselected{
-    color: #0000ff;
+    color: #004aad;
+    font-weight: bold;
     font-family: 'Lucida Sans Regular';
+    font-size: larger;
 }
 
 .standard{
@@ -19,7 +23,7 @@ body{
 }
 
 .bgd{
-    background-color: #000022;
+    background-color: #ebebfd;
     position:fixed;
     padding:0;
     margin:0;
@@ -29,4 +33,8 @@ body{
 
     width: 100%;
     height: 100%;
+}
+
+.logo{
+    width: 10%;
 }
