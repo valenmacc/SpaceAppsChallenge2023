@@ -25,7 +25,7 @@
 
             <div class="container">
                 <div class="card" id="blue_bgd">
-                    <div class="row p-5">
+                    <div class="row p-5 invisible" id="animationID"><!--BLOQUE DE TEXTO-->
                         <div class="col-md-4">
                             <img class="img-fluid rounded-start" src="images/Logo sin fondo.png" alt="">
                         </div>
@@ -36,7 +36,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row p-5">
+                    <div class="row p-5"><!--BLOQUE DE TEXTO-->
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h3 class="card-title standard" id="white_title">Surface Mineralogy (L2B)</h3>
@@ -47,7 +47,7 @@
                             <img class="img-fluid rounded-start" src="images/Logo sin fondo.png" alt="">
                         </div>
                     </div>
-                    <div class="row p-5">
+                    <div class="row p-5"><!--BLOQUE DE TEXTO-->
                         <div class="col-md-4">
                             <img class="img-fluid rounded-start" src="images/Logo sin fondo.png" alt="">
                         </div>
@@ -65,10 +65,21 @@
 
 
         </div>
-    <script>
-        function goto (str){
-            window.location.href = str + ".html";
+        <script>
+            function goto (str){
+                window.location.href = str + ".html";
+            }
+    
+            
+            var element = document.getElementById("animationID");
+            document.body.onscroll = function() {
+            if (document.getElementById("animationID").getBoundingClientRect().top <= window.innerHeight) {
+                document.body.onscroll = "";
+                element.classList.remove("invisible")
+                element.classList.add("opacity_animation");
+                element.classList.add("standard_movement");
+            }
         }
-    </script>
+        </script>
 </body>
 </html>
