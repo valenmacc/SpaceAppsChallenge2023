@@ -74,9 +74,9 @@
     }
 }
 
-.border{
+#border{
     border-color: #fede59;
-    border-width: 5px;
+    border-width: 10px;
 }
 
 .nav_anime{
