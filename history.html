@@ -8,24 +8,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-<body class="body_history">
+<body class="body_vertical">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <div class="container-fluid h-100">
-            <div class="container-fluid text-center">
-                <img src="images/logo_index.png" class="logo" onclick="goto('index')">
-            </div>
-            <nav class="navbar navbar-inverse navbar-fixed-bottom l-5 nav_anime">
-                <div class="m-5 container-fluid text-center">
-                    <about onclick="goto('about')" class="notselected">ABOUT</about>
-                    <div class="border"><history class="selected p-2">ORIGIN</history></div>
-                    <data onclick="goto('data')" class="notselected nav_anime">DATA</data>
-                    <map onclick="goto('map')" class="notselected">MAP GUIDE</map>
-                </div>
-            </nav>
-            <div class="container-fluid text-center">
-                <iframe width="50%" height="400" src="https://www.youtube.com/embed/7751lDSuHFg?autoplay=1&mute=1"></iframe>
-            </div>
+    <div class="container-fluid text-center">
+        <img src="images/logo_index.png" class="logo" onclick="goto('index')">
+    </div>
+    <nav class="navbar navbar-inverse sticky-top nav_anime">
+        <div class="m-2 container-fluid text-center">
+            <about onclick="goto('about')" class="notselected nav_anime">ABOUT</about>
+            <history class="selected p-2 nav_anime">ORIGIN</history>
+            <data onclick="goto('data')" class="notselected nav_anime nav_anime">DATA</data>
+            <goals onclick="goto('goals')" class="notselected nav_anime">OBJECTIVES</goals>
+            <map onclick="goto('map')" class="notselected nav_anime">MAP GUIDE</map>
         </div>
+    </nav>
+    <div class="container-fluid text-center p-5">
+        <iframe width="60%" height="400" src="https://www.youtube.com/embed/7751lDSuHFg?autoplay=1&mute=1"></iframe>
+    </div>
     <script>
         function goto (str){
             window.location.href = str + ".html";

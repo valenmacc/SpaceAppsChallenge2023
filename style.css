@@ -3,35 +3,37 @@
     background-size: cover;
 }
 
-.body_history{
-    background-image: url(images/stars.png);
+.body_vertical{
+    background-image: url(images/fondo_vertical.jpg);
     background-size: cover;
 }
 
-.about{
-    background-color: #000038;
-    background-size: cover;
+.selected_anime{
+    color: #004aad;
+    font-weight: bold;
+    font-family: 'Lucida Sans Regular';
+    font-size: larger;
+    border-style: solid;
+    border-color: #004aad;
+    border-radius: 5px;
 }
 
-.selected{
+.selected_static{
     color: #fede59;
     font-weight: bold;
     font-family: 'Lucida Sans Regular';
     font-size: larger;
-}
-
-.selected_index{
-    color: #fede59;
-    font-weight: bold;
-    font-family: 'Lucida Sans Regular';
-    font-size: xx-large;
+    border-style: solid;
+    border-color: #fede59;
+    border-radius: 5px;
 }
 
 .notselected{
-    color: #fede59;
+    color: #004aad;
     font-weight: bold;
     font-family: 'Lucida Sans Regular';
     font-size: larger;
+    border-radius: 5px;
 }
 
 .notselected_index{
@@ -43,6 +45,12 @@
 
 .standard{
     color: white;
+    font-family: 'Lucida Sans Regular';
+    font-size: larger;
+}
+
+.standard_black{
+    color: black;
     font-family: 'Lucida Sans Regular';
     font-size: larger;
 }
@@ -87,6 +95,13 @@
 
 .nav_anime{
     animation: moveright 0.5s linear 1;
+    background-color: #fede59;
+}
+
+.nav_static{
+    animation: moveright 0.5s linear 1;
+    background-color: transparent;
+    color: #fede59;
 }
 
 @keyframes moveright{
@@ -113,12 +128,8 @@
     background-size: cover;
   }
 
-#blue_bgd{
-    background-color: #000038;
-}
-
-#white_title{
-    color: white;
+#section_title{
+    color: #fede59;
     font-size: xx-large;
 }
 

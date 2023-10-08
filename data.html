@@ -8,142 +8,143 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="body_vertical">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <div class="container-fluid about">
-            <div class="container-fluid text-center">
-                <img src="images/logo_index.png" class="logo" onclick="goto('index')">
-            </div>
-            <nav class="navbar navbar-inverse navbar-fixed-bottom l-5 nav_anime">
-                <div class="m-5 container-fluid text-center">
-                    <about onclick="goto('about')" class="notselected">ABOUT</about>
-                    <history onclick="goto('history')" class="notselected">ORIGIN</history>
-                    <div class="border"><data class="selected p-2">DATA</data></div>
-                    <map onclick="goto('map')" class="notselected">MAP GUIDE</map>
-                </div>
-            </nav>
+    <div class="container-fluid text-center">
+        <img src="images/logo_index.png" class="logo" onclick="goto('index')">
+    </div>
+    <nav class="navbar navbar-inverse sticky-top nav_anime">
+        <div class="m-2 container-fluid text-center">
+            <about onclick="goto('about')" class="notselected nav_anime">ABOUT</about>
+            <history onclick="goto('history')" class="notselected nav_anime">ORIGIN</history>
+            <data class="selected p-2 nav_anime">DATA</data>
+            <goals onclick="goto('goals')" class="notselected nav_anime">OBJECTIVES</goals>
+            <map onclick="goto('map')" class="notselected nav_anime">MAP GUIDE</map>
+        </div>
+    </nav>
 
-            <div class="container">
-                <div class="card" id="blue_bgd">
-                    <h3 class="card-title standard text-center" id="white_title">HOW EMIT & NASA'S TECH ARE REVOLUTIONIZING MINERAL MAPPING</h3>
-                    <div class="row p-5 invisible" id="animationID1"><!--BLOQUE DE TEXTO-->
-                        <div class="col-md-4">
-                            <img class="img-fluid" src="images/foto_5.png">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body align-middle">
-                                <p class="card-text standard">EMIT, using imaging spectroscopy, an advanced technology developed by NASA, follows a unique process to gather information. This process focuses on data processing from a Dyson image spectrometer. With these observations, scientists are on track to produce more accurate mineral composition maps of these areas.</p>
-                            </div>
-                        </div>
+    <div class="container">
+        <div class="card bg-transparent border-0">
+            <h3 class="card-title standard text-center" id="section_title">HOW EMIT & NASA'S TECH ARE REVOLUTIONIZING MINERAL MAPPING</h3>
+            <div class="row p-5 invisible align-items-center" id="animationID1"><!--BLOQUE DE TEXTO-->
+                <div class="col-md-4">
+                    <img class="img-fluid rounded bg-white" src="images/foto_5.png">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body align-middle">
+                        <p class="card-text standard">EMIT, using imaging spectroscopy, an advanced technology developed by NASA, follows a unique process to gather information. This process focuses on data processing from a Dyson image spectrometer. With these observations, scientists are on track to produce more accurate mineral composition maps of these areas.</p>
                     </div>
-                    <div class="row p-5 invisible" id="animationID2"><!--BLOQUE DE TEXTO-->
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h3 class="card-title standard right" id="white_title">First</h3>
-                                <p class="card-text standard right">Scanning the surface and developing telemetry with the obtained data.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <img class="img-fluid" src="images/foto_6.png"/>
-                            <img class="img-fluid" src="images/foto_7.png"/>
-                        </div>
+                </div>
+            </div>
+            <div class="row p-5 invisible align-items-center" id="animationID2"><!--BLOQUE DE TEXTO-->
+                <div class="col-sm">
+                    <div class="card-body">
+                        <h3 class="card-title standard right" id="section_title">First</h3>
+                        <p class="card-text standard right">Scanning the surface and developing telemetry with the obtained data.</p>
                     </div>
-                    <div class="row p-5 invisible" id="animationID3"><!--BLOQUE DE TEXTO-->
-                        <div class="col-md-4">
-                            <img class="img-fluid rounded-start" src="images/foto_8.png">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body align-middle">
-                                <h3 class="card-title standard" id="white_title">Second</h3>
-                                <p class="card-text standard">Organizing and completing the obtained data, and then processing that information including geolocation and observation geometry information.</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="col-sm">
+                    <img class="img-fluid rounded bg-white" src="images/foto_6.png"/>
+                </div>
+                <div class="col-sm">
+                    <img class="img-fluid rounded bg-white" src="images/foto_7.png"/>
+                </div>
+            </div>
+            <div class="row p-5 invisible align-items-center" id="animationID3"><!--BLOQUE DE TEXTO-->
+                <div class="col-md-4">
+                    <img class="img-fluid rounded bg-white" src="images/foto_8.png">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body align-middle">
+                        <h3 class="card-title standard" id="section_title">Second</h3>
+                        <p class="card-text standard">Organizing and completing the obtained data, and then processing that information including geolocation and observation geometry information.</p>
                     </div>
-                    <div class="row p-5 invisible" id="animationID4"><!--BLOQUE DE TEXTO-->
-                        <div class="col-md-8">
-                            <div class="card-body align-middle">
-                                <h3 class="card-title standard right" id="white_title">Third</h3>
-                                <p class="card-text standard right">Filtering data to eliminate atmospheric disturbances and unnecessary data, and then develop the surface Reflectance telemetry and the surface mineralogy map.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <img class="img-fluid rounded-start" src="images/foto_9.png">
-                        </div>
+                </div>
+            </div>
+            <div class="row p-5 invisible align-items-center" id="animationID4"><!--BLOQUE DE TEXTO-->
+                <div class="col-md-8">
+                    <div class="card-body align-middle">
+                        <h3 class="card-title standard right" id="section_title">Third</h3>
+                        <p class="card-text standard right">Filtering data to eliminate atmospheric disturbances and unnecessary data, and then develop the surface Reflectance telemetry and the surface mineralogy map.</p>
                     </div>
-                    <div class="row p-5 invisible" id="animationID5"><!--BLOQUE DE TEXTO-->
-                        <div class="col-md-4">
-                            <img class="img-fluid rounded-start" src="images/foto_10.png">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body align-middle">
-                                <h3 class="card-title standard" id="white_title">Fourth</h3>
-                                <p class="card-text standard">Gridded map of mineral composition with uncertainties and quality flag.</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-fluid rounded bg-white" src="images/foto_9.png">
+                </div>
+            </div>
+            <div class="row p-5 invisible align-items-center" id="animationID5"><!--BLOQUE DE TEXTO-->
+                <div class="col-md-4">
+                    <img class="img-fluid" src="images/foto_10.png">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body align-middle">
+                        <h3 class="card-title standard" id="section_title">Fourth</h3>
+                        <p class="card-text standard">Gridded map of mineral composition with uncertainties and quality flag.</p>
                     </div>
-                    <div class="row p-5 invisible" id="animationID6"><!--BLOQUE DE TEXTO-->
-                        <div class="col-md-8">
-                            <div class="card-body align-middle">
-                                <h3 class="card-title standard right" id="white_title">Fifth</h3>
-                                <p class="card-text standard right">Obtaining de Earth System Model.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <img class="img-fluid rounded-start" src="images/logo_index.png">
-                        </div>
+                </div>
+            </div>
+            <div class="row p-5 invisible align-items-center" id="animationID6"><!--BLOQUE DE TEXTO-->
+                <div class="col-md-8">
+                    <div class="card-body align-middle">
+                        <h3 class="card-title standard right" id="section_title">Fifth</h3>
+                        <p class="card-text standard right">Obtaining de Earth System Model.</p>
                     </div>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-fluid rounded-start" src="images/logo_index.png">
                 </div>
             </div>
         </div>
-        <script>
-            function goto (str){
-                window.location.href = str + ".html";
+    </div>
+    <script>
+        function goto (str){
+            window.location.href = str + ".html";
+        }
+        
+        var element1 = document.getElementById("animationID1");
+        var element2 = document.getElementById("animationID2");
+        var element3 = document.getElementById("animationID3");
+        var element4 = document.getElementById("animationID4");
+        var element5 = document.getElementById("animationID5");
+        var element6 = document.getElementById("animationID6");
+        document.body.onscroll = function() {
+        if (document.getElementById("animationID1").getBoundingClientRect().top + 400 <= window.innerHeight) {
+            //document.body.onscroll = "";
+            element1.classList.remove("invisible");
+            element1.classList.add("opacity_animation");
+            element1.classList.add("standard_movement_left");
+        }
+        if (document.getElementById("animationID2").getBoundingClientRect().top + 400 <= window.innerHeight) {
+            //document.body.onscroll = "";
+            element2.classList.remove("invisible");
+            element2.classList.add("opacity_animation");
+            element2.classList.add("standard_movement_right");
             }
-            
-            var element1 = document.getElementById("animationID1");
-            var element2 = document.getElementById("animationID2");
-            var element3 = document.getElementById("animationID3");
-            var element4 = document.getElementById("animationID4");
-            var element5 = document.getElementById("animationID5");
-            var element6 = document.getElementById("animationID6");
-            document.body.onscroll = function() {
-            if (document.getElementById("animationID1").getBoundingClientRect().top + 400 <= window.innerHeight) {
-                //document.body.onscroll = "";
-                element1.classList.remove("invisible");
-                element1.classList.add("opacity_animation");
-                element1.classList.add("standard_movement_left");
+        if (document.getElementById("animationID3").getBoundingClientRect().top + 400 <= window.innerHeight) {
+            //document.body.onscroll = "";
+            element3.classList.remove("invisible"); 
+            element3.classList.add("opacity_animation");
+            element3.classList.add("standard_movement_left");
             }
-            if (document.getElementById("animationID2").getBoundingClientRect().top + 400 <= window.innerHeight) {
-                //document.body.onscroll = "";
-                element2.classList.remove("invisible");
-                element2.classList.add("opacity_animation");
-                element2.classList.add("standard_movement_right");
-                }
-            if (document.getElementById("animationID3").getBoundingClientRect().top + 400 <= window.innerHeight) {
-                //document.body.onscroll = "";
-                element3.classList.remove("invisible"); 
-                element3.classList.add("opacity_animation");
-                element3.classList.add("standard_movement_left");
-                }
-            if (document.getElementById("animationID4").getBoundingClientRect().top + 400 <= window.innerHeight) {
-                //document.body.onscroll = "";
-                element4.classList.remove("invisible"); 
-                element4.classList.add("opacity_animation");
-                element4.classList.add("standard_movement_right");
-                }
-            if (document.getElementById("animationID5").getBoundingClientRect().top + 400 <= window.innerHeight) {
-                //document.body.onscroll = "";
-                element5.classList.remove("invisible"); 
-                element5.classList.add("opacity_animation");
-                element5.classList.add("standard_movement_left");
-                }
-            if (document.getElementById("animationID6").getBoundingClientRect().top + 200 <= window.innerHeight) {
-                //document.body.onscroll = "";
-                element6.classList.remove("invisible"); 
-                element6.classList.add("opacity_animation");
-                element6.classList.add("standard_movement_right");
-                }
+        if (document.getElementById("animationID4").getBoundingClientRect().top + 400 <= window.innerHeight) {
+            //document.body.onscroll = "";
+            element4.classList.remove("invisible"); 
+            element4.classList.add("opacity_animation");
+            element4.classList.add("standard_movement_right");
             }
-        </script>
+        if (document.getElementById("animationID5").getBoundingClientRect().top + 400 <= window.innerHeight) {
+            //document.body.onscroll = "";
+            element5.classList.remove("invisible"); 
+            element5.classList.add("opacity_animation");
+            element5.classList.add("standard_movement_left");
+            }
+        if (document.getElementById("animationID6").getBoundingClientRect().top + 200 <= window.innerHeight) {
+            //document.body.onscroll = "";
+            element6.classList.remove("invisible"); 
+            element6.classList.add("opacity_animation");
+            element6.classList.add("standard_movement_right");
+            }
+        }
+    </script>
 </body>
 </html>
