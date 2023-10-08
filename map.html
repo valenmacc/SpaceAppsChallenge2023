@@ -10,27 +10,55 @@
 
 <body class="body_vertical">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <div class="container-fluid">
-        <div class="container-fluid text-center">
-            <img src="images/logo_index.png" class="logo" onclick="goto('index')">
-        </div>
-        <nav class="navbar navbar-inverse sticky-top nav_anime">
-            <div class="m-2 container-fluid text-center">
-                <about onclick="goto('about')" class="notselected nav_anime">ABOUT</about>
-                <history onclick="goto('history')" class="notselected nav_anime">ORIGIN</history>
-                <data onclick="goto('data')" class="notselected nav_anime">DATA</data>
-                <goals onclick="goto('goals')" class="notselected nav_anime">OBJECTIVES</goals>
-                <histormapy class="selected_anime p-2 nav_anime">MAP GUIDE</map>
+        <div class="container-fluid about">
+            <div class="container-fluid text-center">
+                <img src="images/logo_index.png" class="logo" onclick="goto('index')">
             </div>
-        </nav>
-        <div class="parallax"></div>
-        
+            <nav class="navbar navbar-inverse navbar-fixed-bottom l-5 nav_anime">
+                <div class="m-5 container-fluid text-center">
+                    <about onclick="goto('about')" class="notselected">ABOUT</about>
+                    <history onclick="goto('history')" class="notselected">ORIGIN</history>
+                    <data onclick="goto('data')" class="notselected nav_anime">DATA</data>
+                    <div class="border"><histormapy class="selected_anime p-2">MAP GUIDE</map></div>
+                </div>
+            </nav>
+            <div class="parallax"></div>
+            <p><input type="button" id="metadataButton" value="Methane Metadata" onclick="changeMetadata()"></p>
+            <p><input type="button" id="plumesButton" value="Methane Plumes" onclick="changePlumes()"></p>
+            <p><input type="button" id="RGBButton" value="RGB Mosaic" onclick="changeRGB()"></p>
+            <div class="text-center">
+                <img class="img-fluid" src="images/foto_4.png" alt="" id="theImage">
+                <p class="standard" id="theText">Hello there</p>
+            </div>
             
-        <div class="parallax"></div>
-    </div>
+            <div class="parallax"></div>
+        </div>
     <script>
         function goto (str){
             window.location.href = str + ".html";
+        }
+        var element1 = document.getElementById("animationID1");
+
+        document.body.onscroll = function() {
+        if (document.getElementById("animationID1").getBoundingClientRect().top + 400 <= window.innerHeight) {
+            //document.body.onscroll = "";
+            element1.classList.remove("invisible");
+            element1.classList.add("opacity_animation");
+            element1.classList.add("standard_movement_left");
+        }
+    }
+
+        function changeMetadata(){
+            document.getElementById('theImage').src="images/foto_5.png";
+            document.getElementById('theText').innerHTML = 'metadata';
+        }
+        function changePlumes(){
+            document.getElementById('theImage').src="images/foto_6.png";
+            document.getElementById('theText').innerHTML = 'plumes';
+        }
+        function changeRGB(){
+            document.getElementById('theImage').src="images/foto_7.png";
+            document.getElementById('theText').innerHTML = 'rgb';
         }
     </script>
 </body>

@@ -182,6 +182,8 @@
    }
  }
 
+ #map { height: 700px; }
+
 .right{
     text-align: right;
 }
