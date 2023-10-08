@@ -18,55 +18,46 @@
             <about onclick="goto('about')" class="notselected nav_anime">ABOUT</about>
             <history onclick="goto('history')" class="notselected nav_anime">ORIGIN</history>
             <data onclick="goto('data')" class="notselected nav_anime">DATA</data>
-            <goals class="selected p-2 nav_anime">OBJECTIVES</goals>
+            <goals class="selected_anime p-2 nav_anime">OBJECTIVES</goals>
             <map onclick="goto('map')" class="notselected nav_anime">MAP GUIDE</map>
         </div>
     </nav>
     <div class="container">
         <div class="card bg-transparent border-0">
-            <h3 class="card-title standard text-center" id="section_title">DUST STORMS: WHY CAN'T SCIENTISTS LOOK THE OTHER WAY? FIND OUT NOW!</h3>
+            <p class="card-text standard p-5">EMIT is a NASA Earth Venture Instrument investigation focused in achieving two objectives. The mission is also committed to ensuring that it's measurements are made avaliable for the additional science and applications that they will enable.</p>
+            <h3 class="card-title standard text-center p-4" id="section_title" style="background-color: transparent;">WHAT ARE THE OBJECTIVES?</h3>
             <div class="row p-5 invisible align-items-center" id="animationID1"><!--BLOQUE DE TEXTO-->
-                <div class="col-md-4 text-center">
-                    <img class="img-fluid w-50" src="images/foto_1.png" alt="">
-                </div>
-                <div class="col-md-8">
+                <div class="col-md text-center">
                     <div class="card-body align-middle">
-                        <p class="card-text standard">Mineral dust can travel thousands of miles where it interacts throughout the Earth system. Its impact is still a puzzle: does it warm our world or give it a cool-down?</p>
+                        <p class="card-text standard">1. Constrain the sign and magnitude of dust-related RF at regional and global scales.</p>
                     </div>
                 </div>
-            </div>
-            <div class="row p-5 invisible align-items-center" id="animationID2"><!--BLOQUE DE TEXTO-->
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <p class="card-text standard right">In some places winds can basically emit that dust into the atmosphere and depending on what it is, it’ll tell us whether or not is warming or cooling our environment.                            </p>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <img class="img-fluid w-50" src="images/foto_2.png">
-                </div>
-            </div>
-            <div class="row p-5 invisible align-items-center" id="animationID3"><!--BLOQUE DE TEXTO-->
-                <div class="col-md-4 text-center">
-                    <img class="img-fluid w-50" src="images/foto_3.png">
-                </div>
-                <div class="col-md-8">
+                <div class="col-md">
                     <div class="card-body align-middle">
-                        <p class="card-text standard">Here's the twist: dark minerals might soak up sunlight, adding warmth, while bright ones could act as Earth's mirror, reflecting heat away.
-                        </p>
+                        <p class="card-text standard">2. Predict the increase or decrease of available dust sources under future climate scenarios.</p>
                     </div>
                 </div>
             </div>
 
-            <h3 class="card-title standard text-center p-4" id="section_title">BUT... DOES THAT REALLY AFFECT US?</h3>
-            <div class="row p-5 invisible align-items-center" id="animationID4"><!--BLOQUE DE TEXTO-->
+            <h3 class="card-title standard text-center p-4" id="section_title">WHAT EMIT WILL DO</h3>
+            <div class="row p-5 align-items-center"><!--BLOQUE DE TEXTO-->
+                <div class="card-body">
+                    <p class="card-text standard invisible" id="animationID2">1. It will identify the composition of mineral dust from Earth's arid regions.</p>
+                    <p class="card-text standard invisible" id="animationID3">2. It will clarify whether mineral dust heats or cools the planet.</p>
+                    <p class="card-text standard invisible" id="animationID4">3. Its data will improve the accuracy of climate models.</p>
+                    <p class="card-text standard invisible" id="animationID5">4. It will help scientists predict how future climate scenarios will affect the type and amount of dust in our atmosphere.</p>
+                </div>
+            </div>
+            <div class="row p-5 invisible align-items-center" id="animationID6"><!--BLOQUE DE TEXTO-->
+                <div class="col-md-4 text-center">
+                    <img class="img-fluid" src="images/foto_11.jpg">
+                </div>
                 <div class="col-md-8">
                     <div class="card-body align-middle">
-                        <p class="card-text standard right">This has a potentially significant impact on climate change, especially as we look to the future with more lands becoming dust-producing regions due to desertification. We aim to understand how these changes will influence our future climate.</p>
+                        <h3 class="card-title standard" id="section_title">Western North America</h3>
+                        <p class="card-text standard">A new study has found that dust, not spring warmth, controls the pace of spring snowmelt that feeds the headwaters of the Colorado River.</p>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
-                    <img class="img-fluid w-100" src="images/foto_4.png" alt="">
-                </div>                    
             </div>
         </div>
     </div>
@@ -79,31 +70,45 @@
         var element2 = document.getElementById("animationID2");
         var element3 = document.getElementById("animationID3");
         var element4 = document.getElementById("animationID4");
+        var element5 = document.getElementById("animationID5");
+        var element6 = document.getElementById("animationID6");
         document.body.onscroll = function() {
-        if (document.getElementById("animationID1").getBoundingClientRect().top + 400 <= window.innerHeight) {
-            //document.body.onscroll = "";
-            element1.classList.remove("invisible");
-            element1.classList.add("opacity_animation");
-            element1.classList.add("standard_movement_left");
-        }
-        if (document.getElementById("animationID2").getBoundingClientRect().top + 400 <= window.innerHeight) {
-            //document.body.onscroll = "";
-            element2.classList.remove("invisible");
-            element2.classList.add("opacity_animation");
-            element2.classList.add("standard_movement_right");
+            if (document.getElementById("animationID1").getBoundingClientRect().top + 400 <= window.innerHeight) {
+                //document.body.onscroll = "";
+                element1.classList.remove("invisible");
+                element1.classList.add("opacity_animation");
+                element1.classList.add("standard_movement_left");
             }
-        if (document.getElementById("animationID3").getBoundingClientRect().top + 400 <= window.innerHeight) {
-            //document.body.onscroll = "";
-            element3.classList.remove("invisible"); 
-            element3.classList.add("opacity_animation");
-            element3.classList.add("standard_movement_left");
-            }
-        if (document.getElementById("animationID4").getBoundingClientRect().top + 200 <= window.innerHeight) {
-            //document.body.onscroll = "";
-            element4.classList.remove("invisible"); 
-            element4.classList.add("opacity_animation");
-            element4.classList.add("standard_movement_right");
-            }
+            if (document.getElementById("animationID2").getBoundingClientRect().top + 150 <= window.innerHeight) {
+                //document.body.onscroll = "";
+                element2.classList.remove("invisible");
+                element2.classList.add("opacity_animation");
+                element2.classList.add("standard_movement_right");
+                }
+            if (document.getElementById("animationID3").getBoundingClientRect().top + 200 <= window.innerHeight) {
+                //document.body.onscroll = "";
+                element3.classList.remove("invisible"); 
+                element3.classList.add("opacity_animation");
+                element3.classList.add("standard_movement_right");
+                }
+            if (document.getElementById("animationID4").getBoundingClientRect().top + 250 <= window.innerHeight) {
+                //document.body.onscroll = "";
+                element4.classList.remove("invisible"); 
+                element4.classList.add("opacity_animation");
+                element4.classList.add("standard_movement_right");
+                }
+            if (document.getElementById("animationID5").getBoundingClientRect().top + 300 <= window.innerHeight) {
+                //document.body.onscroll = "";
+                element5.classList.remove("invisible"); 
+                element5.classList.add("opacity_animation");
+                element5.classList.add("standard_movement_right");
+                }
+            if (document.getElementById("animationID6").getBoundingClientRect().top + 300 <= window.innerHeight) {
+                //document.body.onscroll = "";
+                element6.classList.remove("invisible"); 
+                element6.classList.add("opacity_animation");
+                element6.classList.add("standard_movement_left");
+                }
         }
     </script>
 </body>

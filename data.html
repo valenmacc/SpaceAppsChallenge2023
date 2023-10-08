@@ -17,7 +17,7 @@
         <div class="m-2 container-fluid text-center">
             <about onclick="goto('about')" class="notselected nav_anime">ABOUT</about>
             <history onclick="goto('history')" class="notselected nav_anime">ORIGIN</history>
-            <data class="selected p-2 nav_anime">DATA</data>
+            <data class="selected_anime p-2 nav_anime">DATA</data>
             <goals onclick="goto('goals')" class="notselected nav_anime">OBJECTIVES</goals>
             <map onclick="goto('map')" class="notselected nav_anime">MAP GUIDE</map>
         </div>
@@ -108,42 +108,42 @@
         var element5 = document.getElementById("animationID5");
         var element6 = document.getElementById("animationID6");
         document.body.onscroll = function() {
-        if (document.getElementById("animationID1").getBoundingClientRect().top + 400 <= window.innerHeight) {
-            //document.body.onscroll = "";
-            element1.classList.remove("invisible");
-            element1.classList.add("opacity_animation");
-            element1.classList.add("standard_movement_left");
-        }
-        if (document.getElementById("animationID2").getBoundingClientRect().top + 400 <= window.innerHeight) {
-            //document.body.onscroll = "";
-            element2.classList.remove("invisible");
-            element2.classList.add("opacity_animation");
-            element2.classList.add("standard_movement_right");
+            if (document.getElementById("animationID1").getBoundingClientRect().top + 400 <= window.innerHeight) {
+                //document.body.onscroll = "";
+                element1.classList.remove("invisible");
+                element1.classList.add("opacity_animation");
+                element1.classList.add("standard_movement_left");
             }
-        if (document.getElementById("animationID3").getBoundingClientRect().top + 400 <= window.innerHeight) {
-            //document.body.onscroll = "";
-            element3.classList.remove("invisible"); 
-            element3.classList.add("opacity_animation");
-            element3.classList.add("standard_movement_left");
-            }
-        if (document.getElementById("animationID4").getBoundingClientRect().top + 400 <= window.innerHeight) {
-            //document.body.onscroll = "";
-            element4.classList.remove("invisible"); 
-            element4.classList.add("opacity_animation");
-            element4.classList.add("standard_movement_right");
-            }
-        if (document.getElementById("animationID5").getBoundingClientRect().top + 400 <= window.innerHeight) {
-            //document.body.onscroll = "";
-            element5.classList.remove("invisible"); 
-            element5.classList.add("opacity_animation");
-            element5.classList.add("standard_movement_left");
-            }
-        if (document.getElementById("animationID6").getBoundingClientRect().top + 200 <= window.innerHeight) {
-            //document.body.onscroll = "";
-            element6.classList.remove("invisible"); 
-            element6.classList.add("opacity_animation");
-            element6.classList.add("standard_movement_right");
-            }
+            if (document.getElementById("animationID2").getBoundingClientRect().top + 400 <= window.innerHeight) {
+                //document.body.onscroll = "";
+                element2.classList.remove("invisible");
+                element2.classList.add("opacity_animation");
+                element2.classList.add("standard_movement_right");
+                }
+            if (document.getElementById("animationID3").getBoundingClientRect().top + 400 <= window.innerHeight) {
+                //document.body.onscroll = "";
+                element3.classList.remove("invisible"); 
+                element3.classList.add("opacity_animation");
+                element3.classList.add("standard_movement_left");
+                }
+            if (document.getElementById("animationID4").getBoundingClientRect().top + 400 <= window.innerHeight) {
+                //document.body.onscroll = "";
+                element4.classList.remove("invisible"); 
+                element4.classList.add("opacity_animation");
+                element4.classList.add("standard_movement_right");
+                }
+            if (document.getElementById("animationID5").getBoundingClientRect().top + 400 <= window.innerHeight) {
+                //document.body.onscroll = "";
+                element5.classList.remove("invisible"); 
+                element5.classList.add("opacity_animation");
+                element5.classList.add("standard_movement_left");
+                }
+            if (document.getElementById("animationID6").getBoundingClientRect().top + 200 <= window.innerHeight) {
+                //document.body.onscroll = "";
+                element6.classList.remove("invisible"); 
+                element6.classList.add("opacity_animation");
+                element6.classList.add("standard_movement_right");
+                }
         }
     </script>
 </body>
