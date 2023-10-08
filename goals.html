@@ -15,16 +15,16 @@
     </div>
     <nav class="navbar navbar-inverse sticky-top nav_anime">
         <div class="m-2 container-fluid text-center">
-            <about class="selected p-2 nav_anime">ABOUT</about>
+            <about onclick="goto('about')" class="notselected nav_anime">ABOUT</about>
             <history onclick="goto('history')" class="notselected nav_anime">ORIGIN</history>
             <data onclick="goto('data')" class="notselected nav_anime">DATA</data>
-            <goals onclick="goto('goals')" class="notselected nav_anime">OBJECTIVES</goals>
+            <goals class="selected p-2 nav_anime">OBJECTIVES</goals>
             <map onclick="goto('map')" class="notselected nav_anime">MAP GUIDE</map>
         </div>
     </nav>
     <div class="container">
         <div class="card bg-transparent border-0">
-            <h3 class="card-title standard text-center p-4" id="section_title" style="background-color: transparent;">DUST STORMS: WHY CAN'T SCIENTISTS LOOK THE OTHER WAY? FIND OUT NOW!</h3>
+            <h3 class="card-title standard text-center" id="section_title">DUST STORMS: WHY CAN'T SCIENTISTS LOOK THE OTHER WAY? FIND OUT NOW!</h3>
             <div class="row p-5 invisible align-items-center" id="animationID1"><!--BLOQUE DE TEXTO-->
                 <div class="col-md-4 text-center">
                     <img class="img-fluid w-50" src="images/foto_1.png" alt="">
@@ -68,11 +68,6 @@
                     <img class="img-fluid w-100" src="images/foto_4.png" alt="">
                 </div>                    
             </div>
-
-            <h3 class="card-title standard text-center p-4" id="">WHAT DID SCIENTISTS DO?</h3>
-            <p class="card-text standard_black p-5">Initially, they launched a resupply service vehicle bound for the International Space Station (ISS). Once aboard the ISS, they affixed it to its exterior. EMIT, an imaging spectrometer, had a telescope designed to capture vast amounts of light. This light was then focused onto the slit of the spectrometer.</p>
-
-            <p align="center"><iframe src="https://drive.google.com/file/d/1n6jZcg7633-fNXMjs2jGccSEZuF17jrZ/preview" width="640" height="480" allow="autoplay"></iframe></p>
         </div>
     </div>
     <script>
