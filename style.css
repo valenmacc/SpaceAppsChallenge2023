@@ -11,7 +11,7 @@
 .selected_anime{
     color: #004aad;
     font-weight: bold;
-    font-family: 'Lucida Sans Regular';
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: larger;
     border-style: solid;
     border-color: #004aad;
@@ -21,7 +21,7 @@
 .selected_static{
     color: #fede59;
     font-weight: bold;
-    font-family: 'Lucida Sans Regular';
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: larger;
     border-style: solid;
     border-color: #fede59;
@@ -31,7 +31,7 @@
 .notselected_anime{
     color: #004aad;
     font-weight: bold;
-    font-family: 'Lucida Sans Regular';
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: larger;
     border-radius: 5px;
 }
@@ -39,7 +39,7 @@
 .notselected_static{
     color: #fede59;
     font-weight: bold;
-    font-family: 'Lucida Sans Regular';
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: larger;
     border-radius: 5px;
 }
@@ -47,19 +47,19 @@
 .notselected_index{
     color: #fede59;
     font-weight: bold;
-    font-family: 'Lucida Sans Regular';
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: xx-large;
 }
 
 .standard{
     color: white;
-    font-family: 'Lucida Sans Regular';
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: larger;
 }
 
 .standard_black{
     color: black;
-    font-family: 'Lucida Sans Regular';
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: larger;
 }
 
@@ -106,7 +106,7 @@
     background-color: #fede59;
     color: #004aad;
     font-weight: bold;
-    font-family: 'Lucida Sans Regular';
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: larger;
     border-radius: 5px;
 }
@@ -120,7 +120,7 @@
     background-color: transparent;
     color: #fede59;
     font-weight: bold;
-    font-family: 'Lucida Sans Regular';
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: larger;
     border-radius: 5px;
 }
