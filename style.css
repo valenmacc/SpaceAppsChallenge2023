@@ -28,8 +28,16 @@
     border-radius: 5px;
 }
 
-.notselected{
+.notselected_anime{
     color: #004aad;
+    font-weight: bold;
+    font-family: 'Lucida Sans Regular';
+    font-size: larger;
+    border-radius: 5px;
+}
+
+.notselected_static{
+    color: #fede59;
     font-weight: bold;
     font-family: 'Lucida Sans Regular';
     font-size: larger;
@@ -96,12 +104,25 @@
 .nav_anime{
     animation: moveright 0.5s linear 1;
     background-color: #fede59;
+    color: #004aad;
+    font-weight: bold;
+    font-family: 'Lucida Sans Regular';
+    font-size: larger;
+    border-radius: 5px;
+}
+
+.nav_anime_index{
+    animation: moveright 0.5s linear 1;
 }
 
 .nav_static{
     animation: moveright 0.5s linear 1;
     background-color: transparent;
     color: #fede59;
+    font-weight: bold;
+    font-family: 'Lucida Sans Regular';
+    font-size: larger;
+    border-radius: 5px;
 }
 
 @keyframes moveright{

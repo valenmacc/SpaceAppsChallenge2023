@@ -13,18 +13,18 @@
     <div class="container-fluid text-center">
         <img src="images/logo_index.png" class="logo" onclick="goto('index')">
     </div>
-    <nav class="navbar navbar-inverse sticky-top nav_anime">
+    <nav class="navbar navbar-inverse sticky-top nav_static" id="navbar">
         <div class="m-2 container-fluid text-center">
-            <about class="selected_anime p-2 nav_anime">ABOUT</about>
-            <history onclick="goto('history')" class="notselected nav_anime">ORIGIN</history>
-            <data onclick="goto('data')" class="notselected nav_anime">DATA</data>
-            <goals onclick="goto('goals')" class="notselected nav_anime">OBJECTIVES</goals>
-            <map onclick="goto('map')" class="notselected nav_anime">MAP GUIDE</map>
+            <about class="selected_static p-2" id="selected_nav">ABOUT</about>
+            <history onclick="goto('history')">ORIGIN</history>
+            <data onclick="goto('data')">DATA</data>
+            <goals onclick="goto('goals')">OBJECTIVES</goals>
+            <map onclick="goto('map')">MAP GUIDE</map>
         </div>
     </nav>
     <div class="container">
         <div class="card bg-transparent border-0">
-            <h3 class="card-title standard text-center p-4" id="section_title" style="background-color: transparent;">DUST STORMS: WHY CAN'T SCIENTISTS LOOK THE OTHER WAY? FIND OUT NOW!</h3>
+            <h3 class="card-title standard text-center p-4" id="section_title">DUST STORMS: WHY CAN'T SCIENTISTS LOOK THE OTHER WAY? FIND OUT NOW!</h3>
             <div class="row p-5 invisible align-items-center" id="animationID1"><!--BLOQUE DE TEXTO-->
                 <div class="col-md-4 text-center">
                     <img class="img-fluid w-50" src="images/foto_1.png" alt="">
@@ -84,6 +84,8 @@
         var element2 = document.getElementById("animationID2");
         var element3 = document.getElementById("animationID3");
         var element4 = document.getElementById("animationID4");
+        var element5 = document.getElementById("navbar");
+        var element6 = document.getElementById("selected_nav");
         document.body.onscroll = function() {
             if (document.getElementById("animationID1").getBoundingClientRect().top + 400 <= window.innerHeight) {
                 //document.body.onscroll = "";
@@ -96,19 +98,27 @@
                 element2.classList.remove("invisible");
                 element2.classList.add("opacity_animation");
                 element2.classList.add("standard_movement_right");
-                }
+            }
             if (document.getElementById("animationID3").getBoundingClientRect().top + 400 <= window.innerHeight) {
                 //document.body.onscroll = "";
                 element3.classList.remove("invisible"); 
                 element3.classList.add("opacity_animation");
                 element3.classList.add("standard_movement_left");
-                }
+            }
             if (document.getElementById("animationID4").getBoundingClientRect().top + 200 <= window.innerHeight) {
                 //document.body.onscroll = "";
                 element4.classList.remove("invisible"); 
                 element4.classList.add("opacity_animation");
                 element4.classList.add("standard_movement_right");
-                }
+            }
+            if (document.getElementById("navbar").getBoundingClientRect().top + 50 <= window.innerHeight) {
+                //document.body.onscroll = "";
+                element5.classList.replace("nav_static", "nav_anime");
+            }
+            if (document.getElementById("selected_nav").getBoundingClientRect().top + 50 <= window.innerHeight) {
+                //document.body.onscroll = "";
+                element6.classList.replace("selected_static", "selected_anime");
+            }
         }
     </script>
 </body>

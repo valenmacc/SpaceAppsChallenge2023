@@ -13,13 +13,13 @@
     <div class="container-fluid text-center">
         <img src="images/logo_index.png" class="logo" onclick="goto('index')">
     </div>
-    <nav class="navbar navbar-inverse sticky-top nav_anime">
+    <nav class="navbar navbar-inverse sticky-top nav_static" id="navbar">
         <div class="m-2 container-fluid text-center">
-            <about onclick="goto('about')" class="notselected nav_anime">ABOUT</about>
-            <history onclick="goto('history')" class="notselected nav_anime">ORIGIN</history>
-            <data class="selected_anime p-2 nav_anime">DATA</data>
-            <goals onclick="goto('goals')" class="notselected nav_anime">OBJECTIVES</goals>
-            <map onclick="goto('map')" class="notselected nav_anime">MAP GUIDE</map>
+            <about onclick="goto('about')">ABOUT</about>
+            <history onclick="goto('history')">ORIGIN</history>
+            <data class="selected_static p-2" id="selected_nav">DATA</data>
+            <goals onclick="goto('goals')">OBJECTIVES</goals>
+            <map onclick="goto('map')">MAP GUIDE</map>
         </div>
     </nav>
 
@@ -107,6 +107,8 @@
         var element4 = document.getElementById("animationID4");
         var element5 = document.getElementById("animationID5");
         var element6 = document.getElementById("animationID6");
+        var element7 = document.getElementById("navbar");
+        var element8 = document.getElementById("selected_nav");
         document.body.onscroll = function() {
             if (document.getElementById("animationID1").getBoundingClientRect().top + 400 <= window.innerHeight) {
                 //document.body.onscroll = "";
@@ -119,31 +121,39 @@
                 element2.classList.remove("invisible");
                 element2.classList.add("opacity_animation");
                 element2.classList.add("standard_movement_right");
-                }
+            }
             if (document.getElementById("animationID3").getBoundingClientRect().top + 400 <= window.innerHeight) {
                 //document.body.onscroll = "";
                 element3.classList.remove("invisible"); 
                 element3.classList.add("opacity_animation");
                 element3.classList.add("standard_movement_left");
-                }
+            }
             if (document.getElementById("animationID4").getBoundingClientRect().top + 400 <= window.innerHeight) {
                 //document.body.onscroll = "";
                 element4.classList.remove("invisible"); 
                 element4.classList.add("opacity_animation");
                 element4.classList.add("standard_movement_right");
-                }
+            }
             if (document.getElementById("animationID5").getBoundingClientRect().top + 400 <= window.innerHeight) {
                 //document.body.onscroll = "";
                 element5.classList.remove("invisible"); 
                 element5.classList.add("opacity_animation");
                 element5.classList.add("standard_movement_left");
-                }
+            }
             if (document.getElementById("animationID6").getBoundingClientRect().top + 200 <= window.innerHeight) {
                 //document.body.onscroll = "";
                 element6.classList.remove("invisible"); 
                 element6.classList.add("opacity_animation");
                 element6.classList.add("standard_movement_right");
-                }
+            }
+            if (document.getElementById("navbar").getBoundingClientRect().top + 50 <= window.innerHeight) {
+                //document.body.onscroll = "";
+                element7.classList.replace("nav_static", "nav_anime");
+            }
+            if (document.getElementById("selected_nav").getBoundingClientRect().top + 50 <= window.innerHeight) {
+                //document.body.onscroll = "";
+                element8.classList.replace("selected_static", "selected_anime");
+            }
         }
     </script>
 </body>
