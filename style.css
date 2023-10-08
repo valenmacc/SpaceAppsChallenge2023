@@ -3,13 +3,8 @@
     background-size: cover;
 }
 
-.body_history{
-    background-image: url(images/stars.png);
-    background-size: cover;
-}
-
-.about{
-    background-color: #000038;
+.body_vertical{
+    background-image: url(images/fondo_vertical.jpg);
     background-size: cover;
 }
 
@@ -43,6 +38,12 @@
 
 .standard{
     color: white;
+    font-family: 'Lucida Sans Regular';
+    font-size: larger;
+}
+
+.standard_black{
+    color: black;
     font-family: 'Lucida Sans Regular';
     font-size: larger;
 }
@@ -113,12 +114,13 @@
     background-size: cover;
   }
 
-#blue_bgd{
-    background-color: #000038;
-}
-
 #white_title{
     color: white;
+    font-size: xx-large;
+}
+
+#black_title{
+    color: black;
     font-size: xx-large;
 }
 
